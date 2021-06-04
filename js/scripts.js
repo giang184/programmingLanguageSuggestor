@@ -7,60 +7,77 @@ $(document).ready(function() {
     const animal = $("input:radio[name=animal]:checked").val();
     const color = $("input:radio[name=color]:checked").val();
 
+    if(!name || !age)
+    {
+      alert("Please fill out your name and age.");
+    }
+    else
+    {
+      $("#nameDisplay").text(name);
+      if(sleep === 'early') {
+        if(color==='red' || color==='blue'){
+          $("#display1").text("C++");
+        }
+        else {
+          $("#display1").text("Java");
+        }
+      }
+      else {
+        if(color==='red' || color==='blue'){
+          $("#display1").text("Java");
+        }
+        else {
+          $("#display1").text("C++");
+        }
+      }
 
-    if(sleep === 'early') {
-      if(color==='red' || color==='blue'){
-        $("#display1").text("Your primary language you should study is C++. This programming language is ideal to help you develop back end software.");
+      if(age > 30) {
+        if(gender==='male' && animal==='dog' ){
+          $("#display2").text("Go");
+          $("#display3").text("Ruby");
+        }
+        else if(gender==='male' && animal==='cat') {
+          $("#display2").text("Go");
+          $("#display3").text("C#");
+        }
+        else if (gender==='female' && animal==='dog'){
+          $("#display2").text("Python");
+          $("#display3").text("Ruby");
+        }
+        else if (gender==='female' && animal==='cat'){
+          $("#display2").text("Python");
+          $("#display3").text("C#");
+        }
+        else {
+          $("#display2").text("Python");
+          $("#display3").text("Go");
+        }
       }
       else {
-        $("#display1").text("Your primary language you should study is Swift. This programming language is ideal to help you develop back end software.");
+        if(gender==='male' && animal==='dog' ){
+          $("#display2").text("Rust");
+          $("#display3").text("Ruby");
+        }
+        else if(gender==='male' && animal==='cat') {
+          $("#display2").text("Rust");
+          $("#display3").text("C#");
+        }
+        else if (gender==='female' && animal==='dog'){
+          $("#display2").text("JavaScript");
+          $("#display3").text("Ruby");
+        }
+        else if (gender==='female' && animal==='cat'){
+          $("#display2").text("JavaScript");
+          $("#display3").text("C#");
+        }
+        else {
+          $("#display2").text("Rust");
+          $("#display3").text("JavaScript");
+        }
       }
-    }
-    else {
-      if(color==='red' || color==='blue'){
-        $("#display1").text("Your primary language you should study is Swift. This programming language is ideal to help you develop back end software.");
-      }
-      else {
-        $("#display1").text("Your primary language you should study is C++. This programming language is ideal to help you develop back end software.");
-      }
-    }
 
-    if(age > 30) {
-      if(gender==='male' && animal==='dog' ){
-        $("#display2").text("Additionally, you should learn Go and Ruby to be flexible in other areas of programming needs.");
-      }
-      else if(gender==='male' && animal==='cat') {
-        $("#display2").text("Additionally, you should learn Go and C# to be flexible in other areas of programming needs.");
-      }
-      else if (gender==='female' && animal==='dog'){
-        $("#display2").text("Additionally, you should learn Python and Ruby to be flexible in other areas of programming needs.");
-      }
-      else if (gender==='female' && animal==='cat'){
-        $("#display2").text("Additionally, you should learn Python and C# to be flexible in other areas of programming needs.");
-      }
-      else {
-        $("#display2").text("Additionally, you should learn Python and Go to be flexible in other areas of programming needs.");
-      }
+      $("#result").show();
+      event.preventDefault();
     }
-    else {
-      if(gender==='male' && animal==='dog' ){
-        $("#display2").text("Additionally, you should learn Rust and Ruby to be flexible in other areas of programming needs.");
-      }
-      else if(gender==='male' && animal==='cat') {
-        $("#display2").text("Additionally, you should learn Rust and C# to be flexible in other areas of programming needs.");
-      }
-      else if (gender==='female' && animal==='dog'){
-        $("#display2").text("Additionally, you should learn JavaScript and Ruby to be flexible in other areas of programming needs.");
-      }
-      else if (gender==='female' && animal==='cat'){
-        $("#display2").text("Additionally, you should learn JavaScript and C# to be flexible in other areas of programming needs.");
-      }
-      else {
-        $("#display2").text("Additionally, you should learn Rust and JavaScript to be flexible in other areas of programming needs.");
-      }
-    }
-
-    $("#result").show();
-    event.preventDefault();
   });
 });

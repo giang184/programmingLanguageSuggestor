@@ -13,6 +13,12 @@ h4{
   padding: 30px;
 }
 
+.img{
+  width: 70%;
+  border: 2px solid rgb(10, 13, 48);
+  margin: 30px;
+  float:right;
+}
 p {
   padding-bottom: 5px;
 }
@@ -27,7 +33,23 @@ p {
   display: none;
   background-color: rgb(203, 231, 170);
   font-weight:bolder;
-  padding: 30px;
-  text-align: center;
+  padding: 40px;
+  font-size: 20px;
 }
 
+.format {
+  margin: 30px;
+  padding-bottom: 10px;
+}
+#display1{
+  color:crimson;
+  font-style: italic;
+}
+#display2{
+  color:crimson;
+  font-style: italic;
+}
+#display3{
+  color:crimson;
+  font-style: italic;
+}
