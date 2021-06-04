@@ -12,3 +12,15 @@ h4{
   background-color: rgba(167, 216, 223, 0.993);
   padding: 30px;
 }
+
+p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  float:right;
+  padding: 10px;
+  background-color: rgb(235, 145, 29);
+  font-weight:bolder;
+}
