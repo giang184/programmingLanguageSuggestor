@@ -7,8 +7,9 @@ $(document).ready(function() {
     const animal = $("input:radio[name=animal]:checked").val();
     const color = $("input:radio[name=color]:checked").val();
 
-   
+    
     $("#match").text(name + age+gender+sleep+animal+color);
+    $("#match").append("/n" + " " + color);
     $("#result").show();
     event.preventDefault();
   });
