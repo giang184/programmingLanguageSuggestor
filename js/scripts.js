@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     
     $("#match").text(name + age+gender+sleep+animal+color);
-    $("#match").append("/n" + " " + color);
+    $("#match").append(+ " " + color);
     $("#result").show();
     event.preventDefault();
   });
