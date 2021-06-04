@@ -1,7 +1,14 @@
+h1{
+  text-align: center;
+}
+
 body{
   background-color: rgb(245, 233, 224);
 }
-.form-group{
+h4{
+  padding: 30px;
+}
+.form{
   background-color: rgba(167, 216, 223, 0.993);
-  padding: 20px;
+  padding: 30px;
 }
