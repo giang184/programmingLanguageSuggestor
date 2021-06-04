@@ -15,12 +15,22 @@ h4{
 
 p {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .btn {
   float:right;
-  padding: 10px;
   background-color: rgb(235, 145, 29);
   font-weight:bolder;
+}
+
+#result {
+  display: none;
+  
+}
+
+#display{
+  background-color: rgb(203, 231, 170);
+  font-weight:bolder;
+  padding: 30px;
 }
