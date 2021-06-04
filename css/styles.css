@@ -25,18 +25,9 @@ p {
 
 #result {
   display: none;
-  
-}
-
-#display{
   background-color: rgb(203, 231, 170);
   font-weight:bolder;
   padding: 30px;
-}
-
-#display2{
   text-align: center;
-  background-color: rgb(203, 231, 170);
-  font-weight:bolder;
-  padding: 30px;
 }
+

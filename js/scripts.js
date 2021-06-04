@@ -6,39 +6,60 @@ $(document).ready(function() {
     const sleep = $("select#sleep").val();
     const animal = $("input:radio[name=animal]:checked").val();
     const color = $("input:radio[name=color]:checked").val();
-    
-    if(gender==='female') {
-      if(thing==='shopping' && color!=='blue' ){
-        statement = "Rachel";
-      }
-      else if(thing==='shopping' || thing==='eating' ) {
-        statement = "Monica";
-      }
-      else if (thing ==='smoking'){
-        statement = "Chandler";
+
+
+    if(sleep === 'early') {
+      if(color==='red' || color==='blue'){
+        $("#display1").text("Your primary language you should study is C++. This programming language is ideal to help you develop back end software.");
       }
       else {
-        statement = "Phoebe";
+        $("#display1").text("Your primary language you should study is Swift. This programming language is ideal to help you develop back end software.");
       }
     }
     else {
-      if(thing ==='eating'){
-        statement = "Joey";
-      }
-      else if(thing === 'smoking') {
-        statement = "Chandler";
-      }
-      else if(thing==='shopping' || color==='pink' ) {
-        statement = "Rachel";
+      if(color==='red' || color==='blue'){
+        $("#display1").text("Your primary language you should study is Swift. This programming language is ideal to help you develop back end software.");
       }
       else {
-        statement = "Ross";
+        $("#display1").text("Your primary language you should study is C++. This programming language is ideal to help you develop back end software.");
       }
     }
-    
 
+    if(age > 30) {
+      if(gender==='male' && animal==='dog' ){
+        $("#display2").text("Additionally, you should learn Go and Ruby to be flexible in other areas of programming needs.");
+      }
+      else if(gender==='male' && animal==='cat') {
+        $("#display2").text("Additionally, you should learn Go and C# to be flexible in other areas of programming needs.");
+      }
+      else if (gender==='female' && animal==='dog'){
+        $("#display2").text("Additionally, you should learn Python and Ruby to be flexible in other areas of programming needs.");
+      }
+      else if (gender==='female' && animal==='cat'){
+        $("#display2").text("Additionally, you should learn Python and C# to be flexible in other areas of programming needs.");
+      }
+      else {
+        $("#display2").text("Additionally, you should learn Python and Go to be flexible in other areas of programming needs.");
+      }
+    }
+    else {
+      if(gender==='male' && animal==='dog' ){
+        $("#display2").text("Additionally, you should learn Rust and Ruby to be flexible in other areas of programming needs.");
+      }
+      else if(gender==='male' && animal==='cat') {
+        $("#display2").text("Additionally, you should learn Rust and C# to be flexible in other areas of programming needs.");
+      }
+      else if (gender==='female' && animal==='dog'){
+        $("#display2").text("Additionally, you should learn JavaScript and Ruby to be flexible in other areas of programming needs.");
+      }
+      else if (gender==='female' && animal==='cat'){
+        $("#display2").text("Additionally, you should learn JavaScript and C# to be flexible in other areas of programming needs.");
+      }
+      else {
+        $("#display2").text("Additionally, you should learn Rust and JavaScript to be flexible in other areas of programming needs.");
+      }
+    }
 
-    //$("#match").append( color);
     $("#result").show();
     event.preventDefault();
   });
