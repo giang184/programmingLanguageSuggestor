@@ -17,7 +17,7 @@
 _This is a website that will take some user input and suggest a few programming launguages for the user to learn._
 
 ## Setup/Installation Requirements
-* Visit [this webpage](https://giang184.github.io/portfolio/). 
+* Visit [this webpage](https://giang184.github.io/programmingLanguageSuggestor/). 
 
 * Or clone [this](https://github.com/giang184/programmingLanguageSuggestor.git) repository to your desktop
 * Navigate to the top level of the directory.
